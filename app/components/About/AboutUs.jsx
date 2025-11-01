@@ -37,7 +37,7 @@ const AboutUs = () => {
 
             <div className="flex gap-4">
               <Link
-                href="/branches"
+                href="/contact"
                 className="bg-[#c68a3f] text-white px-8 py-3 rounded-md hover:opacity-90 transition"
               >
                 فروعنا

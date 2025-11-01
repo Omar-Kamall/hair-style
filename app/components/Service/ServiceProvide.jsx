@@ -54,8 +54,8 @@ const ServiceProvide = () => {
               <p className="text-white mt-2">{service.description}</p>
             </div>
             <div className="absolute text-center inset-0 bg-opacity-50 flex opacity-100 transition-opacity duration-300 group-hover:opacity-0">
-              <div className="bg-[#c68a3f] flex items-center justify-center overflow-hidden">
-                <span className="text-white rotate-90">{service.title}</span>
+              <div className="bg-[#c68a3f] w-[60px] flex items-center justify-center overflow-hidden">
+                <span className="text-white rotate-90 whitespace-nowrap">{service.title}</span>
               </div>
             </div>
           </div>

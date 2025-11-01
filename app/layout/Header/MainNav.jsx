@@ -9,10 +9,10 @@ const MainNav = () => {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { id: 1 , href: "/", label: "الرئيسية" },
-    { id: 2 , href: "/about", label: "من نحن" },
-    { id: 3 , href: "/service", label: "الخدمات" },
-    { id: 4 , href: "/contact", label: "فروعنا" },
+    { id: 1, href: "/", label: "الرئيسية" },
+    { id: 2, href: "/about", label: "من نحن" },
+    { id: 3, href: "/service", label: "الخدمات" },
+    { id: 4, href: "/contact", label: "فروعنا" },
   ];
 
   // اغلاق بالـ Escape
@@ -25,17 +25,18 @@ const MainNav = () => {
   }, [open]);
 
   return (
-    <header className="w-full flex justify-center fixed z-40 bg-transparent">
+    <header className="absolute top-0 left-0 w-full flex justify-center z-40 bg-transparent">
       <div className="w-[min(1350px,94%)] flex items-center justify-between md:pt-15 pt-25 pb-5">
         {/* logo */}
         <div className="flex items-center gap-4">
-          <Image className="w-13 h-13 rounded-2xl" src={Logo} alt="لوجو-الصالون"/>
-            <Link
-              href={"/"}
-              className="text-2xl text-[#ffba08] transition"
-            >
-              هير استايل
-            </Link>
+          <Image
+            className="w-13 h-13 rounded-2xl"
+            src={Logo}
+            alt="لوجو-الصالون"
+          />
+          <Link href="/" className="text-2xl text-[#c68a3f] transition">
+            هير استايل
+          </Link>
         </div>
 
         {/* desktop links */}
@@ -47,7 +48,7 @@ const MainNav = () => {
             <Link
               key={l.id}
               href={l.href}
-              className="text-sm text-gray-400 hover:text-[#c68a3f] transition"
+              className="text-sm text-white hover:text-[#c68a3f] transition"
             >
               {l.label}
             </Link>
@@ -59,7 +60,7 @@ const MainNav = () => {
           <Link
             href="/contact"
             role="button"
-            className={`hidden md:inline-block px-4 py-2 rounded-md text-sm font-semibold text-white bg-[#c68a3f] hover:brightness-95 transition`}
+            className="hidden md:inline-block px-4 py-2 rounded-md text-sm font-semibold text-white bg-[#c68a3f] hover:brightness-95 transition"
           >
             فروعنا
           </Link>
@@ -95,12 +96,10 @@ const MainNav = () => {
         className={`fixed inset-0 z-50 transition-opacity duration-300 md:hidden ${
           open ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
-        // الخلفية تستخدم متغير غلوبال من الـ globals.css
         style={{ background: "var(--mobile-menu-bg, rgba(0,0,0,0.45))" }}
         onClick={() => setOpen(false)}
         aria-hidden={!open}
       >
-        {/* panel: تمنع الضغط من المرور للخلفية */}
         <aside
           className={`fixed top-0 right-0 h-full w-4/5 max-w-[360px] bg-[#252525] shadow-xl transform transition-transform duration-300 ${
             open ? "translate-x-0" : "translate-x-full"

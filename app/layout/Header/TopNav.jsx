@@ -61,23 +61,23 @@ const InstagramIcon = () => (
 
 const TopNav = () => {
   return (
-    <div className="w-full flex justify-center fixed z-40">
+    <div className="w-full flex justify-center absolute top-0 left-0 z-40">
       <div
-        className="w-[min(1350px,94%)] bg-white/95 backdrop-blur-sm rounded-b-xl shadow-md px-5 py-2 flex items-center justify-between gap-4"
+        className="w-[min(1350px,94%)] bg-white/90 backdrop-blur-sm rounded-b-xl shadow-md px-5 py-2 flex items-center justify-between gap-4"
         role="region"
         aria-label="Top navigation"
       >
         {/* يسار - معلومات الاتصال */}
         <div className="flex items-center flex-wrap">
           <div className="flex items-center gap-3 text-sm text-gray-700">
-            <span className={`text-[#c68a3f] inline-flex`}>
+            <span className="text-[#c68a3f] inline-flex">
               <PhoneIcon />
             </span>
             <span>
               <strong>اتصل بنا:</strong>&nbsp;
               <a
                 href="tel:+201093333755"
-                className={`text-[#c68a3f] hover:underline`}
+                className="text-[#c68a3f] hover:underline"
               >
                 +201093333755
               </a>
@@ -85,7 +85,7 @@ const TopNav = () => {
           </div>
 
           <div className="flex items-center gap-3 text-sm text-gray-700">
-            <span className={`text-[#c68a3f] inline-flex`}>
+            <span className="text-[#c68a3f] inline-flex">
               <ClockIcon />
             </span>
             <span>
@@ -93,25 +93,6 @@ const TopNav = () => {
               منتصف الليل (صيف)
             </span>
           </div>
-        </div>
-
-        {/* يمين - أيقونات السوشال */}
-        <div className="flex items-center gap-3">
-          <a
-            href="#"
-            aria-label="facebook"
-            className={`w-9 h-9 rounded-full flex items-center justify-center text-gray-700 hover:text-[#c68a3f] hover:bg-[rgba(198,138,63,0.08)] transition`}
-          >
-            <FacebookIcon />
-          </a>
-
-          <a
-            href="#"
-            aria-label="instagram"
-            className={`w-9 h-9 rounded-full flex items-center justify-center text-gray-700 hover:text-[#c68a3f] hover:bg-[rgba(198,138,63,0.08)] transition`}
-          >
-            <InstagramIcon />
-          </a>
         </div>
       </div>
     </div>
