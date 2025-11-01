@@ -58,22 +58,6 @@ const ContactUs = ({ phone, email, address, location }) => {
           stroke="currentColor"
           strokeWidth="2"
         >
-          <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
-      title: "البريد الإلكتروني",
-      value: email || "Contact@heshamrabea.com",
-      href: email,
-    },
-    {
-      icon: ({ className }) => (
-        <svg
-          className={className}
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
           <path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z" />
           <circle cx="12" cy="10" r="3" />
         </svg>

@@ -2,6 +2,7 @@
 
 import { Img5 } from "@/public/assets/imgs";
 import Image from "next/image";
+import Link from "next/link";
 
 const Panal = () => {
   return (
@@ -34,12 +35,16 @@ const Panal = () => {
               يرضيك 😊.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 bg-[#c68a3f] text-white rounded-md hover:brightness-110 transition">
-                احجز موعدك الآن
-              </button>
-              <button className="px-8 py-4 border-2 border-white text-white rounded-md hover:bg-white hover:text-gray-900 transition">
-                اكتشف خدماتنا
-              </button>
+              <Link href="/service">
+                <button className="px-8 py-4 bg-[#c68a3f] text-white rounded-md hover:brightness-110 transition">
+                  احجز موعدك الآن
+                </button>
+              </Link>
+              <Link href="/service">
+                <button className="px-8 py-4 border-2 border-white text-white rounded-md hover:bg-white hover:text-gray-900 transition">
+                  اكتشف خدماتنا
+                </button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center md:justify-end fade-in-left">
