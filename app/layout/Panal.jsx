@@ -71,7 +71,7 @@ const Panal = () => {
       </div>
 
       {/* مؤشر السحب لأسفل */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white animate-bounce">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white animate-bounce">
         <svg
           width="24"
           height="24"
