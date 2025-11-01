@@ -25,8 +25,8 @@ const MainNav = () => {
   }, [open]);
 
   return (
-    <header className="absolute top-0 left-0 w-full flex justify-center z-40 bg-transparent">
-      <div className="w-[min(1350px,94%)] flex items-center justify-between md:pt-15 pt-25 pb-5">
+    <header className="absolute top-0 left-0 w-full flex justify-center z-20 bg-transparent">
+      <div className="w-[min(1350px,94%)] flex items-center justify-between pt-15 pb-5">
         {/* logo */}
         <div className="flex items-center gap-4">
           <Image

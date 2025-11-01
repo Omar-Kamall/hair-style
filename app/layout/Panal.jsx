@@ -22,7 +22,7 @@ const Panal = () => {
 
       {/* المحتوى */}
       <div className="relative h-full w-full flex items-center px-[5%]">
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-15 items-center">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-15 items-center mt-40">
           <div className="max-w-2xl fade-in-right">
             <span className="inline-block text-[#c68a3f] text-lg mb-4">
               مرحباً بكم في صالوننا

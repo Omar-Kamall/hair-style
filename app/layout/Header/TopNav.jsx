@@ -22,43 +22,6 @@ const ClockIcon = () => (
   </svg>
 );
 
-const FacebookIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
-    <path
-      d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.12 8.44 9.92v-7.02H8.08v-2.9h2.36V9.41c0-2.33 1.39-3.62 3.52-3.62.99 0 2.03.18 2.03.18v2.24h-1.15c-1.13 0-1.48.7-1.48 1.42v1.71h2.52l-.4 2.9h-2.12V22c4.78-.8 8.44-4.93 8.44-9.93z"
-      fill="currentColor"
-    />
-  </svg>
-);
-
-const InstagramIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
-    <rect
-      x="3"
-      y="3"
-      width="18"
-      height="18"
-      rx="5"
-      stroke="currentColor"
-      strokeWidth="1.5"
-    />
-    <path
-      d="M16 11.37A4 4 0 1 1 12.63 8"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M17.5 6.5h.01"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
 const TopNav = () => {
   return (
     <div className="w-full flex justify-center absolute top-0 left-0 z-40">
@@ -68,7 +31,7 @@ const TopNav = () => {
         aria-label="Top navigation"
       >
         {/* يسار - معلومات الاتصال */}
-        <div className="flex items-center flex-wrap">
+        <div className="flex justify-between items-center w-full">
           <div className="flex items-center gap-3 text-sm text-gray-700">
             <span className="text-[#c68a3f] inline-flex">
               <PhoneIcon />
@@ -77,22 +40,31 @@ const TopNav = () => {
               <strong>اتصل بنا:</strong>&nbsp;
               <a
                 href="tel:+201093333755"
-                className="text-[#c68a3f] hover:underline"
+                className="text-[#c68a3f] hover:underline cursor-pointer"
               >
                 +201093333755
               </a>
             </span>
           </div>
 
-          <div className="flex items-center gap-3 text-sm text-gray-700">
-            <span className="text-[#c68a3f] inline-flex">
-              <ClockIcon />
-            </span>
-            <span>
-              <strong>مواعيد العمل:</strong>&nbsp;السبت - الجمعة، 10 صباحًا - 12
-              منتصف الليل (صيف)
-            </span>
-          </div>
+          <a
+            href="https://linktr.ee/hairstaylee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 hover:text-[#c68a3f] transition-colors cursor-pointer"
+            aria-label="Linktree"
+            style={{ pointerEvents: "auto" }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 28 26"
+              fill="currentColor"
+            >
+              <path d="M19.881 6.34096L24.2196 1.88105L26.7378 4.45991L22.1869 8.79846H28.5885V12.3785H22.1565L26.7378 16.8283L24.2196 19.3566L18 13.1067L11.7804 19.3566L9.26221 16.8384L13.8435 12.3886H7.4115V8.79846H13.8131L9.26221 4.45991L11.7804 1.88105L16.1189 6.34096V0H19.881V6.34096ZM16.1189 17.5059H19.881V26.001H16.1189V17.5059Z" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
